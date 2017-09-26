@@ -167,6 +167,7 @@ Create necessary folders:
 
     mkdir /opt/openedx/staticfiles
     mkdir /opt/openedx/uploads # (must correspond to `MEDIA_ROOT`)
+    mkdir /opt/openedx/logs
 
 Create virtualenv:
 
