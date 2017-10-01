@@ -83,6 +83,15 @@ Create folder in which everything will be installed:
 
     sudo mkdir /opt/openedx
     sudo chown edxapp:edxapp /opt/openedx
+    # Replace pip source
+    ## create config file
+    mkdir ~/.pip
+    vi ~/.pip/pip.conf
+    ## add follows lines
+    [global]
+    trusted-host =  mirrors.aliyun.com
+    index-url = http://mirrors.aliyun.com/pypi/simple
+
 
 ## Services
 
@@ -168,6 +177,8 @@ Create necessary folders:
     mkdir /opt/openedx/staticfiles
     mkdir /opt/openedx/uploads # (must correspond to `MEDIA_ROOT`)
     mkdir /opt/openedx/logs
+    # Replace the npm source
+    nano edx-platform/pavelib/prereqs.py with https://registry.npm.taobao.org
 
 Create virtualenv:
 
