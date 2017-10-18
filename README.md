@@ -182,6 +182,7 @@ Create necessary folders:
 
 Create virtualenv:
 
+    ** have to use the offcial pypi source, DO NOT USE THE ~/pip/
     cd /opt/openedx
     virtualenv venv && source venv/bin/activate
 
